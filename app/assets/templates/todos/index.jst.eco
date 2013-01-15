@@ -1,0 +1,6 @@
+<div class='todo'>
+    <input class="toggle" type="checkbox" <%= if @todo.get('done') then 'checked'%>>
+    <div class="title"><%= @todo.get('content')%></div> <a class="destroy"></a>
+    <input class='title_edit hidden' value='<%= @todo.get('content')%>'>
+</div>
+

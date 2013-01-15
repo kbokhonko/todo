@@ -1,0 +1,9 @@
+<div class='stats'>
+	<a class='itemleft' href='#'>Items left(<%= @todos.remaining().length%>)</a>
+	<!--<a class='filter all' href='#'>All</a>
+	<a class='filter active' href='#'>Active</a>
+	<a class='filter completed' href='#'>Completed</a> -->   
+    <% if @todos.completed().length isnt 0: %>
+      <a class='clearcompleted' href='#'>Clear completed(<%= @todos.completed().length%>)</a>
+    <% end %>
+</div>
