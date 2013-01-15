@@ -26,7 +26,10 @@ class Todoapp.Views.TodoApp extends Backbone.View
 
   keyTodoInput: (e) ->
     return if (e.keyCode != 13)
+<<<<<<< HEAD
     return if ($('#new-todo').val() == '')
+=======
+>>>>>>> 2f6ffb6a96b638963dc85514c43df9b4a8d76df6
     this.collection.create
       done: false
       content: $('#new-todo').val()

@@ -19,7 +19,11 @@ Todoapp::Application.configure do
   config.action_controller.perform_caching = false
 
   # Raise exceptions instead of rendering exception templates
+<<<<<<< HEAD
   config.action_dispatch.show_exceptions = true
+=======
+  config.action_dispatch.show_exceptions = false
+>>>>>>> 2f6ffb6a96b638963dc85514c43df9b4a8d76df6
 
   # Disable request forgery protection in test environment
   config.action_controller.allow_forgery_protection    = false

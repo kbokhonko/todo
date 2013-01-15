@@ -23,6 +23,7 @@ end
 gem 'jquery-rails'
 gem 'backbone-on-rails'
 
+<<<<<<< HEAD
 
 group :development, :test do
   gem 'rspec-rails'
@@ -37,6 +38,8 @@ group :development, :test do
 end
 
 
+=======
+>>>>>>> 2f6ffb6a96b638963dc85514c43df9b4a8d76df6
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
