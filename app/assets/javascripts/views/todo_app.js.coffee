@@ -4,7 +4,8 @@ class Todoapp.Views.TodoApp extends Backbone.View
 
   events:
     "keypress #new-todo": "keyTodoInput"
-    "click a.clearcompleted": "clearCompleted"
+    "click a#clearcompleted": "clearCompleted"
+    "click a#hidden_click": "keyTodoInputClick"
     #"click a.completed": "filterCompleted"
     #"click a.active": "filterActive"
 
@@ -26,10 +27,16 @@ class Todoapp.Views.TodoApp extends Backbone.View
 
   keyTodoInput: (e) ->
     return if (e.keyCode != 13)
-<<<<<<< HEAD
     return if ($('#new-todo').val() == '')
-=======
->>>>>>> 2f6ffb6a96b638963dc85514c43df9b4a8d76df6
+    this.collection.create
+      done: false
+      content: $('#new-todo').val()
+      order: this.nextOrder()
+    $('#new-todo').val('')
+
+  keyTodoInputClick: (e) ->
+    console.log('sdfsdfsdfsdf')
+    return if ($('#new-todo').val() == '')
     this.collection.create
       done: false
       content: $('#new-todo').val()

@@ -17,11 +17,7 @@ development:
   encoding: unicode
   database: todoapp_development
   pool: 5
-<<<<<<< HEAD
   username: mykola
-=======
-  username: postgres
->>>>>>> 2f6ffb6a96b638963dc85514c43df9b4a8d76df6
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -42,16 +38,12 @@ development:
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
-test:
+test: &test
   adapter: postgresql
   encoding: unicode
   database: todoapp_test
   pool: 5
-<<<<<<< HEAD
   username: mykola
-=======
-  username: postgres
->>>>>>> 2f6ffb6a96b638963dc85514c43df9b4a8d76df6
   password:
 
 production:
@@ -59,9 +51,8 @@ production:
   encoding: unicode
   database: todoapp_production
   pool: 5
-<<<<<<< HEAD
   username: mykola
-=======
-  username: postgres
->>>>>>> 2f6ffb6a96b638963dc85514c43df9b4a8d76df6
   password:
+
+cucumber:
+  <<: *test

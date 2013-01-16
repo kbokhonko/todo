@@ -2,10 +2,11 @@
 
   <div id="create-todo">
     <%= text_field_tag "new-todo"%>
+    <%= link_to "", "#",  :id => 'hidden_click'%>
   </div>
 
   <div id="main">
-    <ul id="todo-list">
+    <ul id="todo-list" name="todo-list">
     </ul>
   </div>
 
@@ -15,5 +16,5 @@
     <div id ='log'>
       <%= link_to 'Logging list', logdatas_path%>
     </div>
-  </div>  
+  </div>
 </div>

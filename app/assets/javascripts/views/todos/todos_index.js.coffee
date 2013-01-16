@@ -9,7 +9,7 @@ class Todoapp.Views.TodosIndex extends Backbone.View
     "dblclick div.todo"  : "edit",
     "keypress input.title_edit"  : "updateOnEnter"
     "blur input.title_edit" : "close"
-    "click input.toggle"  : "toggleChange"
+    "click input#toggle"  : "toggleChange"
 
   initialize: (todo) ->
     @todo = todo.model
@@ -43,7 +43,7 @@ class Todoapp.Views.TodosIndex extends Backbone.View
     this.render()
 
   toggleChange: ->
-    isChecked = (if this.$el.find('input.toggle').attr("checked") then true else false)
+    isChecked = (if this.$el.find('input#toggle').attr("checked") then true else false)
     this.model.save done: isChecked
 
 

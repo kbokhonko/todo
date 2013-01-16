@@ -23,23 +23,26 @@ end
 gem 'jquery-rails'
 gem 'backbone-on-rails'
 
-<<<<<<< HEAD
-
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
-  gem 'capistrano'
+  gem 'ffaker'
+  gem 'capistrano', :require => false
+  gem 'quiet_assets'
+  gem 'erb2haml'
+  # though this gem is bundled with ruby-1.9.x it should be included here so the appropriate version is used
+  # this eliminates the problem with setting the content-length to chunked
+  gem 'webrick'
   gem "jasmine"
   gem 'shoulda-matchers'
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', :require => false
   gem 'capybara'
   gem 'capybara-webkit'
+  gem 'launchy'
   gem 'database_cleaner'
+  gem 'simplecov'
 end
 
-
-=======
->>>>>>> 2f6ffb6a96b638963dc85514c43df9b4a8d76df6
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

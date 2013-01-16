@@ -37,7 +37,7 @@ ol, ul {
   border-bottom: 1px solid #CCC;
 }
 
-#todo-list .toggle {
+#todo-list #toggle {
   position: relative;
   top: 9px;
   margin: 0 10px 0 7px;
@@ -85,12 +85,23 @@ input.title_edit {
   background: url(/assets/destroy.png) no-repeat center center;
 }
 
+
+#hidden_click {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: url(/assets/go.png) no-repeat center center;
+}
+
 .todo:hover .destroy {
   display: block;
 }
 
 
-.clearcompleted {
+#clearcompleted {
   float: right;
   position: relative;
   line-height: 20px;

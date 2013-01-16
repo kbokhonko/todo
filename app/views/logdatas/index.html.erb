@@ -2,15 +2,17 @@
 
 <div class='main'>
   <table id='table_log'>
-    <%@logs.each do |l|%>    
+    <%@logs.each do |l|%>
 	  <tr>
 	    <td ><%= l.modification %></td>
 	    <td ><%= l.event %></td>
 	    <td ><%= l.created_at %></td>
-	  </tr>    
+	  </tr>
     <% end%>
   </table>
 </div>
 
 <%= link_to "Clear logging", delete_logdatas_path, :remote => true %>
+
+
 

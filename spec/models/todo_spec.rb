@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Todo do
 
-  before(:each) do
+  before(:all) do
     @attr = { :content => "Example", :done => :false }
   end
 
